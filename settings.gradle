@@ -1,0 +1,3 @@
+rootProject.name = 'sinan-rpc'
+include 'rpc-core'
+
