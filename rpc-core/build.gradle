@@ -20,5 +20,10 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile "io.netty:netty-all:4.1.44.Final"
     compile "org.springframework.boot:spring-boot-starter:2.2.2.RELEASE"
-    compile "org.apache.zookeeper:zookeeper:3.5.6"
+//    compile "org.apache.zookeeper:zookeeper:3.5.6"
+//    compile "org.apache.curator:curator-recipes:4.2.0"
+//    compile "org.apache.curator:curator-recipes:3.3.0"
+    compile "org.apache.curator:curator-recipes:2.9.1"
+//    compile "org.apache.curator:apache-curator:4.2.0"
+//    compile "org.apache.curator:curator-client:4.2.0"
 }

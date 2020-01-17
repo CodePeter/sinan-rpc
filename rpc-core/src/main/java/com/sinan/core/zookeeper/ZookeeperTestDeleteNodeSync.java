@@ -50,6 +50,13 @@ public class ZookeeperTestDeleteNodeSync implements Watcher {
             } catch (Exception e) {
 
             }
+        } else if (event.getType() == Event.EventType.NodeChildrenChanged) {
+            try {
+//                System.out.println("Data Updated: "+ new String(zooKeeper.getData(PREFIX_SYNC + "/c1", true, stat)));
+                System.out.println("Data Updated: "+ new String(zooKeeper.getData(event.getPath(), true, stat)));
+            } catch (Exception e) {
+
+            }
         }
     }
 }
